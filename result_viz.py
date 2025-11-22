@@ -7,6 +7,10 @@ import numpy as np
 # =========================
 EXCEL_PATH = "dynamic rebate system.xlsx"  # adjust if needed
 
+st.set_page_config(
+    page_title="Dynamic Rebate Dashboard",
+    layout="wide",
+)
 
 # =========================
 # LOAD & CLEAN DATA
@@ -201,10 +205,7 @@ sheet3 = load_sheet3(EXCEL_PATH)
 # =========================
 # STREAMLIT LAYOUT
 # =========================
-st.set_page_config(
-    page_title="Dynamic Rebate Dashboard",
-    layout="wide",
-)
+
 
 st.title("Dynamic Rebate System Dashboard")
 
